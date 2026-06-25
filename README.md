@@ -1,5 +1,10 @@
 # Multi-Seed_Re-Evaluation_of_RF_Jamming_Intrusion_Detection_in_Vehicular_Networks
 Official repository (Code and per-seed outputs) for the paper "Protocol-Controlled Multi-Seed Re-Evaluation of RF Jamming Intrusion Detection in Vehicular Networks"
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)](https://pytorch.org/)
+
 
 The study proposes and evaluates a hybrid ensemble intrusion detection system for RF jamming attacks in VANETs, combining BiLSTM, XGBoost, and BERT WordPiece within a protocol-controlled, multi-seed statistical evaluation framework across two mobility regimes (15 m/s and 25 m/s).
 
