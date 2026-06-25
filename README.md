@@ -100,20 +100,12 @@ Output JSON files will be saved automatically to `MyDrive/Detector_Results/`.
 ---
 
 ## Dataset
+The dataset used in this work was released by Kosmanos et al. and is publicly available
+via IEEE DataPort:
 
-The experiments use a simulated RF jamming dataset for vehicular networks (VANETs), generated using NS-2/SUMO-based simulation.
-
-**File:** `Dataset_1.csv`
-
-**Access:** The dataset is not included in this repository due to size constraints.
-
-> ⚠️ *Dataset access instructions will be updated here after the paper is accepted. If you need access before then, please contact the corresponding author.*
-
-Interim options:
-- Request the dataset directly via the contact email on the paper.
-- If a public repository link (e.g., Mendeley Data, Zenodo) is established, it will be listed here.
-
----
+> D. Kosmanos, D. Karagiannis, A. Argyriou, S. Lalis, Y. Yigit, and L. Maglaras,
+> "RF Jamming Dataset for Vehicular Wireless Networks," IEEE DataPort, 2023.
+> https://doi.org/10.21227/4zwk-yw78
 
 ## Seeds Used
 
