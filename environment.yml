@@ -1,0 +1,46 @@
+name: detector-v2x
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+
+  # ── Core numerical stack ──────────────────────────────────────────────
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.0
+  - scikit-learn=1.4.2
+
+  # ── Deep learning ─────────────────────────────────────────────────────
+  # TensorFlow / Keras (used for BiLSTM)
+  - pip:
+    - tensorflow==2.20.0       # matches Colab T4 run (see outputs/complexity_benchmark_v3_15m/s.json)
+    - keras==3.3.3
+
+    # PyTorch (used for BERT-based mitigation baseline)
+    - torch==2.11.0+cu128      # CUDA 12.8 build — matches Colab T4
+    - torchvision==0.26.0+cu128
+    - transformers==4.40.2
+    - tokenizers==0.19.1
+
+    # Gradient boosting
+    - xgboost==2.0.3
+
+    # Utilities
+    - matplotlib==3.9.0
+    - seaborn==0.13.2
+    - ipykernel==6.29.4
+    - ipywidgets==8.1.3
+    - tqdm==4.66.4
+    - joblib==1.4.2
+
+# ── CUDA / cuDNN ──────────────────────────────────────────────────────
+# CUDA 12.2, cuDNN 8.9 (pre-installed on Google Colab T4 runtime as of Jun 2026)
+# If running locally, install the matching CUDA toolkit separately:
+#   conda install -c nvidia cuda-toolkit=12.2 cudnn=8.9
+#
+# For CPU-only reproduction (accuracy results only, no latency benchmarks):
+#   Replace torch line above with:  torch==2.11.0+cpu
+#   and remove tensorflow GPU deps; set CUDA_VISIBLE_DEVICES=-1
