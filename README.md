@@ -260,18 +260,6 @@ See `common.set_all_seeds()`.
 
 ---
 
-## What Still Needs Manual Completion
-
-After pushing to GitHub, fill in these placeholders in this README and in the manuscript's Data Availability Statement:
-
-- `<!-- INSERT USERNAME -->` → GitHub username
-- `<!-- INSERT COMMIT HASH after push -->` → exact commit hash (e.g. `a3f9c12`)
-- `<!-- INSERT ARXIV OR DOI -->` → paper DOI or arXiv link
-- Verify DOI `10.21227/jjcg-bk62` for the Kosmanos et al. dataset
-- Run `scripts/export_split_indices.py` with the actual datasets and commit the generated `split_indices/` files
-
----
-
 ## Citation
 
 ```bibtex
